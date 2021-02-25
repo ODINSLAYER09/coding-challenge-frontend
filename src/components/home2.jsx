@@ -96,6 +96,9 @@ class ListTransactions extends Component {
           Welcome to Transfer App, your current Home Currency is {homecurrency}
         </h5>
         <div className="text-center mt-5">
+          <NewTransaction homecurrency={homecurrency} email={email} />
+        </div>
+        <div className="text-center mt-2">
           <div className="btn-group" role="group" aria-label="Basic example">
             <button
               type="button"
@@ -171,9 +174,6 @@ class ListTransactions extends Component {
             ))}
           </tbody>
         </table>
-        <div className="text-center mt-5">
-          <NewTransaction homecurrency={homecurrency} email={email} />
-        </div>
         <div className="text-center mt-1">
           <button
             type="button"
